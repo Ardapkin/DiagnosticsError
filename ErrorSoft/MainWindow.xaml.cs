@@ -20,7 +20,25 @@ namespace DiagnosticsError {
     public partial class MainWindow : Window {
         public MainWindow() {
             InitializeComponent();
+            TextBox1.Text = ("Введите текст");
+           
+
+
+
+            var l = new List<string>();
+            l.Add("1");
+            l.Add("2");
+            l.Add("3");
+
+            ComboBox1.ItemsSource = l;
+            ComboBox1.SelectedIndex = 0;
+        
+        
+
+
         }
+
+        
 
         private void Button_Click(object sender, RoutedEventArgs e) {
             label1.Content = TextBox1.Text;
@@ -28,6 +46,15 @@ namespace DiagnosticsError {
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e) {
 
+        }
+        private void ComboBox1_Selected(object sender, RoutedEventArgs e) {
+
+        }
+
+        private void ComboBox1_SelectionChanged(object sender, SelectionChangedEventArgs e) {
+            
+                label2.Content = ComboBox1.SelectedItem;
+            
         }
     }
 }

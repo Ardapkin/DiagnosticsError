@@ -1,17 +1,18 @@
-﻿<Window x:Class="DiagnosticsError.MainWindow"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DiagnosticsError"
+        xmlns:Collections="clr-namespace:System.Collections;assembly=System.Runtime" x:Class="DiagnosticsError.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="DiagnosticsError" Height="450" Width="800">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="231,53,0,0" VerticalAlignment="Top" Click="Button_Click" Height="44" Width="60"/>
+        <Button Content="Кнопка&#xD;&#xA;" HorizontalAlignment="Left" Margin="231,53,0,0" VerticalAlignment="Top" Click="Button_Click" Height="44" Width="60"/>
         <Label x:Name="label1" Content="Label" HorizontalAlignment="Left" Margin="343,53,0,0" VerticalAlignment="Top" Height="44" Width="344"/>
+        <ComboBox x:Name="ComboBox1" HorizontalAlignment="Left" Margin="171,122,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox1_SelectionChanged" RenderTransformOrigin="0.562,2.317"/>
         <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Margin="37,53,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="165" Height="44" TextChanged="TextBox_TextChanged"/>
-        <ComboBox HorizontalAlignment="Left" Margin="171,122,0,0" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="383,122,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="Label" HorizontalAlignment="Left" Margin="383,122,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
